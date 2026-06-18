@@ -1,0 +1,301 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Montserrat:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+  --bg-primary: #0A0A0A;
+  --bg-secondary: #121212;
+  --bg-card: #181818;
+  --color-gold: #FFD700;
+  --color-purple: #8A2BE2;
+  --color-green: #4CAF50;
+  --color-text: #E5E5E5;
+  --color-text-bright: #FFFFFF;
+  --color-text-muted: #8E8E93;
+  --color-border: #262626;
+  
+  --font-main: 'Montserrat', sans-serif;
+  --font-logo: 'JetBrains Mono', monospace;
+  
+  --glow-gold: 0 0 15px rgba(255, 215, 0, 0.3);
+  --glow-purple: 0 0 15px rgba(138, 43, 226, 0.3);
+  --glow-green: 0 0 15px rgba(76, 175, 80, 0.3);
+}
+
+/* Reseteo y Estilos Base */
+html, body {
+  background-color: transparent !important; /* Hacemos el body invisible para ver el canvas */
+  color: var(--color-text);
+  font-family: var(--font-main);
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/* Clases de Texto y Utilidades Personalizadas */
+.text-gold { color: var(--color-gold) !important; }
+.text-purple { color: var(--color-purple) !important; }
+.text-green { color: var(--color-green) !important; }
+.text-bright { color: var(--color-text-bright) !important; }
+
+.glow-text-gold { text-shadow: var(--glow-gold); }
+.glow-text-purple { text-shadow: var(--glow-purple); }
+.glow-text-green { text-shadow: var(--glow-green); }
+
+/* Bordes de Resplandor Personalizados */
+.glow-border-purple {
+  border: 1px solid var(--color-border);
+  transition: all 0.3s ease;
+}
+.glow-border-purple:hover {
+  border-color: var(--color-purple);
+  box-shadow: var(--glow-purple);
+}
+
+.glow-border-green {
+  border: 1px solid var(--color-border);
+  transition: all 0.3s ease;
+}
+.glow-border-green:hover {
+  border-color: var(--color-green);
+  box-shadow: var(--glow-green);
+}
+
+/* Botones Personalizados */
+.btn-custom-gold {
+  background-color: transparent;
+  color: var(--color-gold);
+  border: 1px solid var(--color-gold);
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+  padding: 0.75rem 1.75rem;
+  border-radius: 4px;
+}
+.btn-custom-gold:hover {
+  background-color: var(--color-gold);
+  color: var(--bg-primary);
+  box-shadow: var(--glow-gold);
+}
+
+.btn-custom-purple {
+  background-color: transparent;
+  color: var(--color-purple);
+  border: 1px solid var(--color-purple);
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+  padding: 0.75rem 1.75rem;
+  border-radius: 4px;
+}
+.btn-custom-purple:hover {
+  background-color: var(--color-purple);
+  color: var(--bg-primary);
+  box-shadow: var(--glow-purple);
+}
+
+/* Encabezado y Barra de Navegación */
+.custom-navbar {
+  background-color: rgba(10, 10, 10, 0.85);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--color-border);
+  transition: all 0.3s ease;
+}
+
+.navbar-brand-logo {
+  font-family: var(--font-logo);
+  font-weight: 700;
+  font-size: 1.4rem;
+  letter-spacing: -0.5px;
+  color: var(--color-text-bright) !important;
+}
+
+.nav-link-custom {
+  font-weight: 500;
+  color: var(--color-text-muted) !important;
+  transition: color 0.3s ease;
+  font-size: 0.95rem;
+}
+.nav-link-custom:hover {
+  color: var(--color-gold) !important;
+}
+
+/* Sección de Bienvenida (Hero) */
+.hero-section {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 100px;
+  padding-bottom: 80px;
+  z-index: 1;
+}
+
+#canvas-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  pointer-events: none;
+  background-color: var(--bg-primary); /* Este es tu fondo real ahora */
+}
+
+/* Sección El Dolor */
+.dolor-section {
+  background-color: var(--bg-secondary);
+  border-top: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+  position: relative;
+  padding: 100px 0;
+}
+
+.pain-metric {
+  font-size: 7.5rem;
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: -2px;
+}
+
+/* Sección de Servicios */
+.servicios-section {
+  padding: 100px 0;
+}
+
+.service-card {
+  background-color: var(--bg-card);
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  height: 100%;
+}
+.service-card:hover {
+  transform: translateY(-8px);
+  border-color: var(--color-purple);
+  box-shadow: var(--glow-purple);
+}
+
+.service-icon-wrapper {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  background-color: rgba(138, 43, 226, 0.1);
+  border: 1px solid rgba(138, 43, 226, 0.2);
+  margin-bottom: 1.5rem;
+}
+
+/* Sección de Método */
+.metodo-section {
+  padding: 100px 0;
+  background-color: var(--bg-secondary);
+  border-top: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.method-step {
+  background-color: var(--bg-card);
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  height: 100%;
+  position: relative;
+}
+.method-step:hover {
+  border-color: var(--color-green);
+  box-shadow: var(--glow-green);
+  transform: translateY(-4px);
+}
+
+.step-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+}
+
+.step-number {
+  font-family: var(--font-logo);
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1;
+  color: var(--color-green);
+  opacity: 0.35;
+}
+
+/* Sección de Contacto */
+.contacto-section {
+  padding: 100px 0;
+}
+
+.cal-embed-wrapper {
+  background-color: var(--bg-card);
+  border: 1px solid var(--color-border);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.6);
+  min-height: 600px;
+}
+
+/* Estilos de Pie de Página */
+.custom-footer {
+  border-top: 1px solid var(--color-border);
+  background-color: var(--bg-primary);
+  padding: 40px 0;
+}
+
+.footer-logo {
+  font-family: var(--font-logo);
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: var(--color-text-bright);
+}
+
+/* Estilos para SVGs Tecnológicos (Inline) */
+.tech-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.tech-svg {
+  fill: #8E8E93; /* Gris apagado por defecto */
+  transition: all 0.3s ease;
+  filter: drop-shadow(0 0 0 rgba(255, 215, 0, 0)); /* Sin brillo inicialmente */
+}
+
+/* Efecto Hover: Eleva el ícono y lo enciende */
+.tech-item:hover {
+  transform: translateY(-5px);
+}
+
+.tech-item:hover .tech-svg {
+  fill: var(--color-gold); /* Se enciende en oro */
+  filter: drop-shadow(0 0 12px rgba(255, 215, 0, 0.6)); /* Glow corporativo */
+}
+
+/* Animación del Botón Principal de WhatsApp */
+.btn-custom-whatsapp {
+  background-color: transparent;
+  color: var(--color-gold);
+  border: 2px solid var(--color-gold);
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* El efecto al pasar el mouse (Hover) */
+.btn-custom-whatsapp:hover {
+  background-color: var(--color-gold);
+  color: var(--bg-primary);
+  box-shadow: 0 0 30px rgba(255, 215, 0, 0.5); /* Resplandor dorado fuerte */
+  transform: translateY(-4px); /* Pequeño salto hacia arriba */
+  border-color: var(--color-gold);
+}

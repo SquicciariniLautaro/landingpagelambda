@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="es" data-bs-theme="dark"></html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lambda Soluciones Digitales | Sistemas Web de Alto Rendimiento</title>
+<meta name="description" content="Sistemas web robustos, ultra-rápidos y de alta conversión para negocios que buscan escalar. Desarrollo de software a medida por Lambda.">
+
+<!-- CSS Local de Bootstrap -->
+<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+
+<!-- CSS Personalizado de Tema Oscuro -->
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Canvas de Fondo Animado Global (Z-Index detrás de todo) -->
+<canvas id="canvas-bg"></canvas>
+
+<!-- BARRA DE NAVEGACIÓN -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top custom-navbar">
+    <div class="container">
+    <a class="navbar-brand navbar-brand-logo" href="#">
+        <span class="logo-glow">λ</span> Lambda
+    </a>
+    <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto align-items-center">
+        <li class="nav-item">
+            <a class="nav-link nav-link-custom px-3" href="#inicio">Inicio</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link nav-link-custom px-3" href="#dolor">Rendimiento</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link nav-link-custom px-3" href="#servicios">Servicios</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link nav-link-custom px-3" href="#stack">Tecnologías</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link nav-link-custom px-3" href="#metodo">Método</a>
+        </li>
+        <li class="nav-item me-3">
+            <a class="nav-link nav-link-custom px-3" href="#contacto">Contacto</a>
+        </li>
+        <li class="nav-item mt-2 mt-lg-0">
+            <a class="btn btn-custom-gold py-2 px-4" href="#contacto">Agendar</a>
+        </li>
+        </ul>
+    </div>
+    </div>
+</nav>
+
+<!-- SECCIÓN DE BIENVENIDA / HERO -->
+<section id="inicio" class="hero-section">
+    <div class="container text-center">
+    <div class="row justify-content-center">
+        <div class="col-lg-10">
+        <div class="badge bg-dark border border-secondary text-gold px-3 py-2 mb-4 rounded-pill">
+            <span class="text-purple"></span> Código de alto rendimiento a medida
+        </div>
+        <h1 class="display-3 fw-bold text-bright mb-4">
+            Sistemas web robustos para negocios que quieren <span class="text-gold glow-text-gold">escalar</span>.
+        </h1>
+        <p class="lead text-muted mb-5 mx-auto" style="max-width: 750px;">
+            Desarrollamos soluciones digitales de alta velocidad, arquitectura limpia y diseño minimalista. Creamos el software que tu operación necesita para superar los límites del mercado.
+        </p>
+        <div class="d-flex flex-column flex-sm-row justify-content-center gap-3">
+            <a href="#contacto" class="btn btn-custom-gold btn-lg">Hablar por WhatsApp</a>
+            <a href="#servicios" class="btn btn-custom-purple btn-lg">Explorar Servicios</a>
+        </div>
+        </div>
+    </div>
+    </div>
+</section>
+
+<!-- SECCIÓN EL DOLOR -->
+<section id="dolor" class="dolor-section">
+    <div class="container">
+    <div class="row align-items-center">
+        <div class="col-lg-6 mb-5 mb-lg-0 text-center text-lg-start">
+        <div class="pain-metric text-green glow-text-green">0.8s</div>
+        <div class="h5 text-uppercase tracking-wider text-muted mt-3">Tiempo de Carga Promedio Lambda</div>
+        </div>
+        <div class="col-lg-6">
+        <h2 class="h1 fw-bold text-bright mb-4">
+            Si tu web tarda más de <span class="text-gold">2 segundos</span>, pierdes al <span class="text-purple">50% de tus clientes</span>.
+        </h2>
+        <p class="text-muted leading-relaxed mb-0">
+            En la era digital, la velocidad no es solo un detalle técnico, es el factor clave de conversión de tu negocio. Los usuarios exigen inmediatez. Desarrollamos sin sobrecargas, optimizando cada línea de código para que tu web se cargue instantáneamente, reteniendo a cada visitante y maximizando tu retorno de inversión.
+        </p>
+        </div>
+    </div>
+    </div>
+</section>
+
+<!-- SECCIÓN SERVICIOS -->
+<section id="servicios" class="servicios-section">
+    <div class="container">
+    <div class="text-center mb-5">
+        <h2 class="display-5 fw-bold text-bright mb-3">Servicios Premium</h2>
+        <p class="text-muted mx-auto" style="max-width: 600px;">
+        Ingeniería de software de alta calidad diseñada exclusivamente para cumplir tus metas de negocio.
+        </p>
+    </div>
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+        <!-- Landing Pages -->
+        <div class="col">
+        <div class="service-card p-4 d-flex flex-column justify-content-between">
+            <div>
+            <div class="service-icon-wrapper text-purple">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/></svg>
+            </div>
+            <h3 class="h4 fw-bold text-bright mb-3">Landing Pages</h3>
+            <p class="text-muted">
+                Páginas de aterrizaje de alto impacto, ultra-rápidas y enfocadas obsesivamente en la conversión de leads y ventas para tus campañas de marketing.
+            </p>
+            </div>
+            <div class="mt-4">
+            <span class="text-gold fw-semibold">Rendimiento garantizado</span>
+            </div>
+        </div>
+        </div>
+        <!-- Webs Corporativas -->
+        <div class="col">
+        <div class="service-card p-4 d-flex flex-column justify-content-between">
+            <div>
+            <div class="service-icon-wrapper text-purple">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>
+            </div>
+            <h3 class="h4 fw-bold text-bright mb-3">Webs Corporativas</h3>
+            <p class="text-muted">
+                Arquitectura digital que proyecta la seriedad, solidez e identidad de tu empresa, asegurando una experiencia interactiva intachable en cualquier dispositivo.
+            </p>
+            </div>
+            <div class="mt-4">
+            <span class="text-gold fw-semibold">Identidad digital imponente</span>
+            </div>
+        </div>
+        </div>
+        <!-- Sistemas a Medida -->
+        <div class="col">
+        <div class="service-card p-4 d-flex flex-column justify-content-between">
+            <div>
+            <div class="service-icon-wrapper text-purple">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
+            </div>
+            <h3 class="h4 fw-bold text-bright mb-3">Sistemas a Medida</h3>
+            <p class="text-muted">
+                Automatización de procesos, CRMs, ERPs, SaaS y aplicaciones web complejas construidas con arquitecturas escalables preparadas para sostener tu crecimiento.
+            </p>
+            </div>
+            <div class="mt-4">
+            <span class="text-gold fw-semibold">Escalabilidad absoluta</span>
+            </div>
+        </div>
+        </div>
+        <!-- Aplicaciones -->
+        <div class="col">
+        <div class="service-card p-4 d-flex flex-column justify-content-between">
+            <div>
+            <div class="service-icon-wrapper text-purple">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
+            </div>
+            <h3 class="h4 fw-bold text-bright mb-3">Aplicaciones</h3>
+            <p class="text-muted">
+                Diseño y desarrollo de aplicaciones móviles e híbridas fluidas, intuitivas y conectadas en tiempo real para ecosistemas iOS y Android.
+            </p>
+            </div>
+            <div class="mt-4">
+            <span class="text-gold fw-semibold">Multiplataforma y nativas</span>
+            </div>
+        </div>
+        </div>
+    </div>
+    </div>
+</section>
+
+<!-- SECCIÓN STACK TECNOLÓGICO -->
+<!-- SECCIÓN STACK TECNOLÓGICO -->
+<section id="stack" class="tech-section py-5">
+    <div class="container text-center">
+        <h3 class="h6 text-uppercase tracking-wider text-muted mb-5">Nuestro Stack Tecnológico</h3>
+        <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 g-4 justify-content-center align-items-center">
+            <!-- HTML5 -->
+            <div class="col">
+                <div class="tech-item p-3">
+                    <svg viewBox="0 0 384 512" width="45" height="45" class="tech-svg">
+                        <path d="M0 32l34.9 395.8L191.5 480l157.6-52.2L384 32H0zm308.2 127.9H124.4l4.1 49.4h175.6l-13.6 148.4-97.9 27v.3h-1.1l-98.7-27.3-6-75.8h47.7L138 320l53.5 14.5 53.7-14.5 6-62.2H84.3L71.5 112.2h241.1l-4.4 47.7z"/>
+                    </svg>
+                </div>
+            </div>
+            <!-- CSS3 -->
+            <div class="col">
+                <div class="tech-item p-3">
+                    <svg viewBox="0 0 384 512" width="45" height="45" class="tech-svg">
+                        <path d="M0 32l34.9 395.8L192 480l157.1-52.2L384 32H0zm313.1 80l-4.8 47.3L193 208.6l-.3.1h111.5l-12.8 146.6-98.2 28.7-98.8-29.2-6.4-73.9h48.9l3.2 38.3 52.6 13.3 54.7-15.4 3.7-61.6-166.3-.5v-.1l-.2.1-3.6-46.3L193.1 162l6.5-2.7H76.7L70.9 112h242.2z"/>
+                    </svg>
+                </div>
+            </div>
+            <!-- JavaScript -->
+            <div class="col">
+                <div class="tech-item p-3">
+                    <svg viewBox="0 0 448 512" width="45" height="45" class="tech-svg">
+                        <path d="M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 48 48-21.5 48-48V80c0-26.5-21.5-48-48-48zM243.8 381.4c0 43.6-25.6 63.5-62.9 63.5-33.7 0-53.2-17.4-63.2-38.5l34.3-20.7c6.6 11.7 12.6 21.6 27.1 21.6 13.8 0 22.6-5.4 22.6-26.5V237.7h42.1v143.7zm99.6 63.5c-39.1 0-64.4-18.6-76.7-43l34.3-19.8c9 14.7 20.8 25.6 41.5 25.6 17.4 0 28.6-8.7 28.6-20.8 0-14.4-11.4-19.5-30.7-28l-10.5-4.5c-30.4-12.9-50.5-29.2-50.5-63.5 0-31.6 24.1-55.6 61.6-55.6 26.8 0 46 9.3 59.8 33.7L368 290c-7.2-12.9-15-18-27.1-18-12.3 0-20.1 7.8-20.1 18 0 12.6 7.8 17.7 25.9 25.6l10.5 4.5c35.8 15.3 55.9 31 55.9 66.2 0 37.8-29.8 58.6-69.7 58.6z"/>
+                    </svg>
+                </div>
+            </div>
+            <!-- React -->
+            <div class="col">
+                <div class="tech-item p-3">
+                    <svg viewBox="0 0 512 512" width="45" height="45" class="tech-svg">
+                        <path d="M418.2 177.2c-5.4-1.8-10.8-3.5-16.2-5.1.9-3.7 1.7-7.4 2.5-11.1 12.3-59.6 4.2-107.5-23.1-123.3-26.3-15.1-69.2.6-112.6 38.4-4.3 3.7-8.5 7.6-12.5 11.5-2.7-2.6-5.5-5.2-8.3-7.7-45.5-40.4-91.1-57.4-118.4-41.5-26.2 15.2-34 60.3-23 116.7 1.1 5.6 2.3 11.1 3.7 16.7-6.4 1.8-12.7 3.8-18.6 5.9C48.3 189.4 6.9 217.7 1.8 247.2c-5 28.7 25.9 59.6 79.9 79.8 6 .2 11.9 4.3 17.9 6.2-1.3 4.9-2.6 9.6-3.8 14.4-11 56.4-3.2 101.5 23 116.8 27.3 15.8 72.8-.2 118.4-41.5 2.8-2.5 5.5-5 8.3-7.7 4 3.9 8.2 7.8 12.5 11.5 43.4 37.8 86.3 53.5 112.6 38.4 27.3-15.8 35.4-63.7 23.1-123.3-.8-3.7-1.6-7.4-2.5-11.1 5.4-1.6 10.8-3.3 16.2-5.1 55.3-18.8 98.8-48.6 103.8-78.4 5.2-29.4-25.2-59.3-79.8-79.8zm-162 130.4c-32.3 22-83.3 33.3-121.2 24.3-11.1-2.6-22-6.5-31.9-11.9 22.8-38.3 64.9-63.4 113.8-67.6 13.9 33.8 27.7 54.3 39.3 55.2zm-28.7-250.7c17.5-10.2 44.5-3.3 70.9 19.3 22.5 19.3 40.5 46 51 75.3-43 6-86.8 20.3-123.8 41.5-12-32.2-19.4-67.9-20.7-105.2 6.4-15.2 14.8-25.3 22.6-30.9zm-97.3 205.8c-28.9-27.1-46.7-56.1-46.7-72.3 0-16.5 18.2-46.1 48-73.6 11.2 12.3 23.4 26.6 36.5 42.6-8.2 30-11 61.5-8.2 92-10 3.7-20 7.7-29.6 11.3zm19.8-200.7c-26.4-22.6-53.4-29.5-70.9-19.3-7.8 5.6-16.2 15.7-22.6 30.9 1.3 37.3 8.7 73 20.7 105.2 37-21.2 80.8-35.5 123.8-41.5-10.5-29.3-28.5-56-51-75.3zm-39.6 250.5c37.9 9 88.9-2.3 121.2-24.3-11.6-.9-25.4-21.4-39.3-55.2-48.9 4.2-91 29.3-113.8 67.6 9.9 5.4 20.8 9.3 31.9 11.9zm236.4-78.2c-29.8 27.5-48 57.1-48 73.6 0 16.2 17.8 45.2 46.7 72.3 9.6-3.6 19.6-7.6 29.6-11.3-2.8-30.5 0-62 8.2-92-13.1-16-25.3-30.3-36.5-42.6zm37.9-106.9c-11.1-16-23.3-30.3-36.5-42.6-29.8-27.5-48-57.1-48-73.6 0-16.2 17.8-45.2 46.7-72.3 9.6 3.6 19.6 7.6 29.6 11.3 2.8 30.5 0 62-8.2 92-13.1 16-25.3 30.3-36.5 42.6z"/>
+                        <circle cx="256" cy="256" r="48"/>
+                    </svg>
+                </div>
+            </div>
+            <!-- Node.js -->
+            <div class="col">
+                <div class="tech-item p-3">
+                    <svg viewBox="0 0 448 512" width="45" height="45" class="tech-svg">
+                        <path d="M224 508c-6.7 0-13.5-1.8-19.4-5.2l-160-96c-12-7.2-19.4-20.1-19.4-34.1V140c0-14 7.4-26.9 19.4-34.1l160-96c11.9-7.2 26.9-7.2 38.8 0l160 96c12 7.2 19.4 20.1 19.4 34.1v232c0 14-7.4 26.9-19.4 34.1l-160 96c-5.9 3.5-12.7 5.2-19.4 5.2zm-152-138l152 91.2 152-91.2V141.2L224 50 72 141.2v228.8z"/>
+                    </svg>
+                </div>
+            </div>
+            <!-- Python -->
+            <div class="col">
+                <div class="tech-item p-3">
+                    <svg viewBox="0 0 448 512" width="45" height="45" class="tech-svg">
+                        <path d="M439.8 200.5c-7.7-30.9-22.3-54.2-53.4-54.2h-40.1v47.4c0 36.8-31.2 67.8-66.8 67.8H172.7c-29.2 0-53.4 25-53.4 54.3v101.8c0 29 25.2 46 53.4 54.3 33.8 9.9 66.3 11.7 106.8 0 26.9-7.8 53.4-23.5 53.4-54.3v-40.7H226.2v-13.6h160.2c31.1 0 42.6-21.7 53.4-54.2 11.2-33.5 10.7-65.7 0-108.6zM286.2 404c11.1 0 20.1 9.1 20.1 20.3 0 11.3-9 20.4-20.1 20.4-11 0-20.1-9.2-20.1-20.4 .1-11.3 9.1-20.3 20.1-20.3zM167.8 248.1h106.8c29.7 0 53.4-24.5 53.4-54.3V91.9c0-29-24.4-50.7-53.4-55.6-35.8-5.9-74.7-5.6-106.8 .1-45.2 8-53.4 24.7-53.4 55.6v40.7h106.9v13.6h-147c-31.1 0-58.3 18.7-66.8 54.2-9.8 40.7-10.2 66.1 0 108.6 7.6 31.6 25.7 54.2 56.8 54.2H101v-48.8c0-35.3 30.5-66.4 66.8-66.4zm-6.7-142.6c-11.1 0-20.1-9.1-20.1-20.3 .1-11.3 9-20.4 20.1-20.4 11 0 20.1 9.2 20.1 20.4s-9 20.3-20.1 20.3z"/>
+                    </svg>
+                </div>
+            </div>
+            <!-- MongoDB -->
+            <div class="col">
+                <div class="tech-item p-3">
+                    <svg viewBox="0 0 384 512" width="45" height="45" class="tech-svg">
+                        <path d="M224 233.1v108.6c0 23.3-15.6 38.5-32 38.5-16.4 0-32-15.2-32-38.5v-108.6c0-23.3 15.6-38.5 32-38.5 16.4 0 32 15.2 32 38.5zM384 374c0-6.6-1.8-13-5.2-18.6l-85.3-138.6c-4.7-7.6-12.2-12.9-20.9-14.8-14-3-28.7 5.9-31.7 19.9-1.9 9.1 1.7 18.5 8.9 24.3L307 296v60.1l-102.3 64.9c-4 2.5-8.8 3.9-13.7 3.9s-9.7-1.4-13.7-3.9L74 356.1V296l57.2-49.8c7.2-5.8 10.8-15.2 8.9-24.3-3-14-17.7-22.9-31.7-19.9-8.7 1.9-16.2 7.2-20.9 14.8L2.5 355.4c-3.4 5.6-5.2 12-5.2 18.6 0 18.5 13.9 34.3 32.2 36.4l153 17.5c2.9 .3 5.9 .5 8.8 .5s5.9-.2 8.8-.5l153-17.5c18.3-2.1 32.2-17.9 32.2-36.4zm-147.2-261C203 14 195 2 191.1 2c-3.9 0-11.9 12-45.7 111-2.9 8.5-6.6 16.6-10.9 24.1L191.1 168.3 247.7 137.1c-4.3-7.5-8-15.6-10.9-24.1z"/>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SECCIÓN MÉTODO -->
+<section id="metodo" class="metodo-section">
+    <div class="container">
+    <div class="text-center mb-5">
+        <h2 class="display-5 fw-bold text-bright mb-3">Nuestro Método</h2>
+        <p class="text-muted mx-auto" style="max-width: 600px;">
+        Un proceso transparente, iterativo y preciso orientado a entregar software impecable en tiempo récord.
+        </p>
+    </div>
+    <div class="row g-4">
+        <!-- Paso 1 -->
+        <div class="col-md-3">
+        <div class="method-step p-4">
+            <div class="step-header">
+            <span class="step-number">01</span>
+            <span class="badge bg-dark border border-secondary text-green">Fase 1</span>
+            </div>
+            <h4 class="fw-bold text-bright mb-2">Estrategia</h4>
+            <p class="text-muted small">
+            Analizamos a fondo tu modelo de negocio, definimos los KPIs de rendimiento y diseñamos la arquitectura técnica de tu plataforma.
+            </p>
+        </div>
+        </div>
+        <!-- Paso 2 -->
+        <div class="col-md-3">
+        <div class="method-step p-4">
+            <div class="step-header">
+            <span class="step-number">02</span>
+            <span class="badge bg-dark border border-secondary text-green">Fase 2</span>
+            </div>
+            <h4 class="fw-bold text-bright mb-2">UX/UI</h4>
+            <p class="text-muted small">
+            Creamos interfaces minimalistas y lógicas. Nos enfocamos en que cada interacción sea fluida, eliminando la fricción de navegación.
+            </p>
+        </div>
+        </div>
+        <!-- Paso 3 -->
+        <div class="col-md-3">
+        <div class="method-step p-4">
+            <div class="step-header">
+            <span class="step-number">03</span>
+            <span class="badge bg-dark border border-secondary text-green">Fase 3</span>
+            </div>
+            <h4 class="fw-bold text-bright mb-2">Desarrollo</h4>
+            <p class="text-muted small">
+            Escribimos código limpio, tipado y modular. Implementamos sistemas de pruebas y optimizamos recursos para máxima ligereza y carga ágil.
+            </p>
+        </div>
+        </div>
+        <!-- Paso 4 -->
+        <div class="col-md-3">
+        <div class="method-step p-4">
+            <div class="step-header">
+            <span class="step-number">04</span>
+            <span class="badge bg-dark border border-secondary text-green">Fase 4</span>
+            </div>
+            <h4 class="fw-bold text-bright mb-2">Lanzamiento</h4>
+            <p class="text-muted small">
+            Desplegamos en servidores globales ultra-rápidos, monitoreamos la telemetría en vivo y aseguramos soporte técnico continuo.
+            </p>
+        </div>
+        </div>
+    </div>
+    </div>
+</section>
+
+<!-- SECCIÓN CONTACTO / WHATSAPP -->
+<section id="contacto" class="contacto-section">
+    <div class="container text-center">
+    <div class="row justify-content-center">
+        <div class="col-lg-8 col-xl-7">
+        <div class="badge bg-dark border border-secondary text-gold px-3 py-2 mb-4 rounded-pill">
+            <span class="text-purple"></span> Hagamos equipo
+        </div>
+        <h2 class="display-4 fw-bold text-bright mb-4">
+            Impulsa tu negocio al siguiente nivel
+        </h2>
+        <p class="lead text-muted mb-5">
+            ¿Listo para construir un sistema web robusto, rápido y escalable? Conéctate con nosotros en un clic y hablemos directamente sobre tu proyecto comercial.
+        </p>
+        <div class="p-5 rounded-3 bg-card-glass border border-secondary shadow-lg">
+            <h3 class="h4 fw-bold text-bright mb-3">Atención Directa e Inmediata</h3>
+            <p class="text-muted small mb-4">
+            Hablamos directamente contigo. Resolveremos tus dudas técnicas y de negocio sin rodeos.
+            </p>
+            <a href="https://wa.me/5493885759258?text=Hola%20Lambda!%20Me%20gustar%C3%ADa%20consultar%20sobre%20un%20proyecto." target="_blank" rel="noopener noreferrer" class="btn btn-custom-whatsapp btn-lg w-100 py-3 fw-bold">
+            Hablar por WhatsApp
+            </a>
+        </div>
+        </div>
+    </div>
+    </div>
+</section>
+
+<!-- PIE DE PÁGINA / FOOTER -->
+<footer class="custom-footer">
+    <div class="container text-center text-md-start">
+    <div class="row align-items-center">
+        <div class="col-md-6 mb-3 mb-md-0">
+        <div class="footer-logo mb-2">
+            <span class="logo-glow">λ</span> Lambda Soluciones Digitales
+        </div>
+        <p class="text-muted small mb-0">Desarrollo de software y sistemas web de alto rendimiento.</p>
+        </div>
+        <div class="col-md-6 text-md-end text-muted small">
+        <p class="mb-0">&copy; 2026 Lambda Soluciones Digitales. Todos los derechos reservados.</p>
+        </div>
+    </div>
+    </div>
+</footer>
+
+<!-- Script Local de Bootstrap (Bundle) -->
+<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+<script src="background.js"></script>
+</body>
+</html>
